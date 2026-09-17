@@ -1,33 +1,44 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const PANELS = [
   {
     id: "anchor",
-    gradient: "from-olive/25 via-charcoal to-terracotta/15",
+    image: "/images/gallery/gallery-1.png",
+    alt: "Casa Luce's terrace dining room at night, with candlelit tables and a view of the Dubai Marina skyline",
+    objectPosition: "object-[50%_58%] lg:object-[58%_50%]",
     span: "col-span-2 row-span-1 lg:row-span-2",
     aspect: "aspect-[16/9] lg:aspect-square",
   },
   {
     id: "panel-2",
-    gradient: "from-terracotta/20 via-charcoal to-olive/10",
+    image: "/images/gallery/gallery-2.png",
+    alt: "A seafood risotto with shrimp, scallops, and calamari at Casa Luce",
+    objectPosition: "object-center",
     span: "col-span-1 row-span-1",
     aspect: "aspect-square",
   },
   {
     id: "panel-3",
-    gradient: "from-charcoal via-olive/15 to-charcoal",
+    image: "/images/gallery/gallery-3.png",
+    alt: "A candlelit table setting at Casa Luce with the Dubai Marina skyline in the background",
+    objectPosition: "object-center",
     span: "col-span-1 row-span-1",
     aspect: "aspect-square",
   },
   {
     id: "panel-4",
-    gradient: "from-charcoal via-terracotta/15 to-charcoal",
+    image: "/images/gallery/gallery-4.png",
+    alt: "A Casa Luce chef finishing a truffle pasta dish tableside",
+    objectPosition: "object-center",
     span: "col-span-1 row-span-1",
     aspect: "aspect-square",
   },
   {
     id: "panel-5",
-    gradient: "from-olive/15 via-charcoal to-terracotta/20",
+    image: "/images/gallery/gallery-5.png",
+    alt: "A table set for two on the Casa Luce terrace overlooking the Marina waterfront",
+    objectPosition: "object-center",
     span: "col-span-1 row-span-1",
     aspect: "aspect-square",
   },
@@ -62,13 +73,12 @@ export default function GalleryPreview() {
             key={panel.id}
             className={`relative overflow-hidden rounded-sm ring-1 ring-cream/15 ${panel.span} ${panel.aspect}`}
           >
-            <div
-              aria-hidden="true"
-              className={`absolute inset-0 bg-gradient-to-br ${panel.gradient}`}
-            />
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(248,244,236,0.08),_transparent_65%)]"
+            <Image
+              src={panel.image}
+              alt={panel.alt}
+              fill
+              sizes="(min-width: 1024px) 50vw, (min-width: 640px) 66vw, 100vw"
+              className={`object-cover ${panel.objectPosition}`}
             />
           </div>
         ))}
