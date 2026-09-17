@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import OurStory from "@/components/OurStory";
 import SignatureDishes from "@/components/SignatureDishes";
 import WhyCasaLuce from "@/components/WhyCasaLuce";
+import GalleryPreview from "@/components/GalleryPreview";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <OurStory />
       <SignatureDishes />
       <WhyCasaLuce />
+      <GalleryPreview />
     </main>
   );
 }
