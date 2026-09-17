@@ -4,6 +4,7 @@ import SignatureDishes from "@/components/SignatureDishes";
 import WhyCasaLuce from "@/components/WhyCasaLuce";
 import GalleryPreview from "@/components/GalleryPreview";
 import ReservationSection from "@/components/ReservationSection";
+import LocationContact from "@/components/LocationContact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <WhyCasaLuce />
       <GalleryPreview />
       <ReservationSection />
+      <LocationContact />
     </main>
   );
 }
