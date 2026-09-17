@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function OurStory() {
@@ -6,13 +7,14 @@ export default function OurStory() {
       <div className="mx-auto mb-16 h-px w-16 bg-terracotta sm:mb-20" />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-gradient-to-br from-olive/15 via-cream to-terracotta/10 ring-1 ring-charcoal/10">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="font-serif text-2xl tracking-[0.3em] text-charcoal/25">
-              CASA LUCE
-            </span>
-          </div>
-          <div className="absolute bottom-8 left-8 h-px w-16 bg-terracotta/60" />
+        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm ring-1 ring-charcoal/10">
+          <Image
+            src="/images/casa-luce-our-story.png"
+            alt="The Casa Luce dining room, with a table set for two beside the CASA LUCE wall signage and a view of the Dubai Marina skyline"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover object-[70%_30%]"
+          />
         </div>
 
         <div className="flex flex-col">
