@@ -23,7 +23,8 @@ export default function Hero() {
           Italian Kitchen &middot; Dubai Marina
         </span>
         <h1 className="font-serif text-4xl font-semibold leading-tight text-cream sm:text-5xl md:text-6xl">
-          A Taste of Italy, Lit by Dubai
+          A Taste of Italy,
+          <br className="hidden sm:block" /> Lit by Dubai
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg">
           Modern Italian cooking, warm hospitality, and timeless evenings by
