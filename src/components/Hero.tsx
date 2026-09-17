@@ -1,15 +1,21 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-charcoal">
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(189,91,58,0.35),_transparent_60%),radial-gradient(ellipse_at_bottom,_rgba(92,100,64,0.4),_transparent_60%)]"
+      <Image
+        src="/images/casa-luce-hero.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[center_38%]"
       />
+      <div aria-hidden="true" className="absolute inset-0 bg-charcoal/50" />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-charcoal/70 to-charcoal/95"
+        className="absolute inset-0 bg-gradient-to-b from-charcoal/75 via-charcoal/45 to-charcoal/85"
       />
 
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center">
