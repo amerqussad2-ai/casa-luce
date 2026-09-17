@@ -12,10 +12,10 @@ export default function Hero() {
         sizes="100vw"
         className="object-cover object-[center_38%]"
       />
-      <div aria-hidden="true" className="absolute inset-0 bg-charcoal/50" />
+      <div aria-hidden="true" className="absolute inset-0 bg-charcoal/35" />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-b from-charcoal/75 via-charcoal/45 to-charcoal/85"
+        className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/35 to-charcoal/70"
       />
 
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center">
