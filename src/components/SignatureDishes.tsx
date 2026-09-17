@@ -1,15 +1,23 @@
+import Image from "next/image";
+
 const DISHES = [
   {
     name: "Truffle Tagliolini",
     description: "Handmade pasta, black truffle, aged parmesan.",
+    image: "/images/truffle-tagliolini.png",
+    imagePosition: "50% 52%",
   },
   {
     name: "Burrata & Heritage Tomatoes",
     description: "Creamy burrata, seasonal tomatoes, basil oil.",
+    image: "/images/burrata-heritage-tomatoes.png",
+    imagePosition: "50% 55%",
   },
   {
     name: "Branzino al Limone",
     description: "Mediterranean sea bass, lemon, herbs, olive oil.",
+    image: "/images/branzino-al-limone.png",
+    imagePosition: "48% 55%",
   },
 ];
 
@@ -33,19 +41,14 @@ export default function SignatureDishes() {
         {DISHES.map((dish) => (
           <div key={dish.name} className="flex flex-col">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm ring-1 ring-cream/15">
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-br from-olive/25 via-charcoal to-terracotta/20"
+              <Image
+                src={dish.image}
+                alt={dish.name}
+                fill
+                sizes="(min-width: 1024px) 33vw, 100vw"
+                style={{ objectPosition: dish.imagePosition }}
+                className="object-cover"
               />
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(248,244,236,0.08),_transparent_65%)]"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-serif text-xs tracking-[0.35em] text-cream/30">
-                  CASA LUCE
-                </span>
-              </div>
             </div>
             <div className="mt-6 h-px w-10 bg-terracotta/70" />
             <h3 className="mt-6 font-serif text-xl text-cream sm:text-2xl">
