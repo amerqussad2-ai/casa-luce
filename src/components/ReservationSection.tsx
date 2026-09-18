@@ -10,6 +10,7 @@ const TIME_OPTIONS = [
   "9:00 PM",
   "9:30 PM",
   "10:00 PM",
+  "10:30 PM",
 ];
 
 export default function ReservationSection() {
@@ -42,7 +43,7 @@ export default function ReservationSection() {
               <span className="uppercase tracking-widest text-charcoal/70">
                 Dinner Service
               </span>
-              <span className="text-charcoal">6:00 PM &ndash; 10:00 PM</span>
+              <span className="text-charcoal">6:00 PM &ndash; 11:00 PM</span>
             </div>
           </div>
 

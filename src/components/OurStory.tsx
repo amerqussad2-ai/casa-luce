@@ -36,7 +36,7 @@ export default function OurStory() {
           </p>
           <Link
             href="/our-story"
-            className="mt-8 inline-flex w-fit items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive transition-colors hover:text-terracotta"
+            className="-my-1.5 mt-8 inline-flex w-fit items-center gap-2 py-1.5 text-sm font-semibold uppercase tracking-widest text-olive transition-colors hover:text-terracotta"
           >
             Discover Our Story
             <span aria-hidden="true">&rarr;</span>

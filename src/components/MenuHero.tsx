@@ -6,7 +6,7 @@ export default function MenuHero() {
         className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(189,91,58,0.16),transparent_60%)]"
       />
       <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
-        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-glow">
           Our Menu
         </span>
         <h1 className="font-serif text-4xl font-semibold leading-tight text-cream sm:text-5xl md:text-6xl">

@@ -6,7 +6,7 @@ export default function StoryHero() {
         className="absolute inset-0 bg-[radial-gradient(circle_at_50%_100%,rgba(92,100,64,0.18),transparent_60%)]"
       />
       <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
-        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-glow">
           Our Story
         </span>
         <div className="mb-6 h-px w-16 bg-cream/25" />

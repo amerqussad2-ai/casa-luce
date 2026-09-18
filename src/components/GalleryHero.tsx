@@ -6,7 +6,7 @@ export default function GalleryHero() {
         className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,rgba(201,121,93,0.14),transparent_65%)]"
       />
       <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
-        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-glow">
           Gallery
         </span>
         <h1 className="font-serif text-4xl font-semibold leading-tight text-cream sm:text-5xl md:text-6xl">

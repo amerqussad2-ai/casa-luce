@@ -63,7 +63,7 @@ export default function GalleryPreview() {
         </p>
         <Link
           href="/gallery"
-          className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive-glow transition-colors hover:text-terracotta-glow"
+          className="-my-1.5 mt-8 inline-flex items-center gap-2 py-1.5 text-sm font-semibold uppercase tracking-widest text-olive-glow transition-colors hover:text-terracotta-glow"
         >
           View the Gallery
           <span aria-hidden="true">&rarr;</span>

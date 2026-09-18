@@ -23,7 +23,7 @@ export default function ReservationNotes() {
   return (
     <section className="bg-charcoal px-6 py-24 sm:py-32 lg:px-10">
       <div className="mx-auto max-w-2xl text-center">
-        <span className="text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+        <span className="text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-glow">
           Good to Know
         </span>
         <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-cream sm:text-4xl md:text-5xl">

@@ -76,7 +76,7 @@ export default function LocationContact() {
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive-glow transition-colors hover:text-terracotta-glow"
+              className="-my-1.5 inline-flex items-center gap-2 py-1.5 text-sm font-semibold uppercase tracking-widest text-olive-glow transition-colors hover:text-terracotta-glow"
             >
               Contact Us
               <span aria-hidden="true">&rarr;</span>

@@ -6,7 +6,7 @@ export default function ReservationHero() {
         className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_0%,rgba(166,80,51,0.14),transparent_60%)]"
       />
       <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
-        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-glow">
           Reservations
         </span>
         <h1 className="font-serif text-4xl font-semibold leading-tight text-cream sm:text-5xl md:text-6xl">
