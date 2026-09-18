@@ -14,7 +14,7 @@ export default function MenuReservationCTA() {
           Reserve your table and experience Casa Luce by the Marina.
         </p>
         <Link
-          href="/#reservations"
+          href="/reservations"
           className="mt-10 rounded-full bg-terracotta-deep px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90"
         >
           Reserve a Table

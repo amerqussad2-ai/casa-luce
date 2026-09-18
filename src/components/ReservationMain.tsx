@@ -10,39 +10,38 @@ const TIME_OPTIONS = [
   "9:00 PM",
   "9:30 PM",
   "10:00 PM",
+  "10:30 PM",
 ];
 
-export default function ReservationSection() {
+export default function ReservationMain() {
   return (
-    <section
-      id="reservations"
-      className="scroll-mt-24 bg-cream px-6 py-24 sm:py-32 lg:px-10"
-    >
+    <section className="bg-cream px-6 py-24 sm:py-32 lg:px-10">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-20">
         <div className="flex flex-col">
-          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-deep">
-            Reservations
-          </span>
-          <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-charcoal sm:text-4xl md:text-5xl">
-            Your table awaits.
+          <h2 className="font-serif text-3xl font-semibold leading-tight text-charcoal sm:text-4xl md:text-5xl">
+            Reserve your table.
           </h2>
           <p className="mt-6 max-w-md text-base leading-relaxed text-charcoal/70 sm:text-lg">
-            Join us at Casa Luce for an evening of modern Italian dining,
-            warm hospitality, and Marina views.
+            Choose your preferred date, time, and party size. Our team will
+            confirm your reservation shortly.
           </p>
 
           <div className="mt-10 max-w-md space-y-3 border-t border-charcoal/10 pt-8">
             <div className="flex items-baseline justify-between gap-4 text-sm">
               <span className="uppercase tracking-widest text-charcoal/70">
-                Location
+                Dinner
               </span>
-              <span className="text-charcoal">Dubai Marina, Dubai</span>
+              <span className="text-charcoal">6:00 PM &ndash; 11:00 PM</span>
             </div>
             <div className="flex items-baseline justify-between gap-4 text-sm">
               <span className="uppercase tracking-widest text-charcoal/70">
-                Dinner Service
+                Location
               </span>
-              <span className="text-charcoal">6:00 PM &ndash; 10:00 PM</span>
+              <span className="text-charcoal">
+                Dubai Marina, Dubai
+                <br />
+                United Arab Emirates
+              </span>
             </div>
           </div>
 
@@ -53,7 +52,7 @@ export default function ReservationSection() {
         </div>
 
         <div>
-          <ReservationForm timeOptions={TIME_OPTIONS} />
+          <ReservationForm timeOptions={TIME_OPTIONS} includeSpecialRequests />
         </div>
       </div>
     </section>
