@@ -75,7 +75,7 @@ export default function LocationContact() {
               Get Directions
             </a>
             <Link
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive-glow transition-colors hover:text-terracotta-glow"
             >
               Contact Us
