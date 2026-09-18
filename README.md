@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Casa Luce
 
-## Getting Started
+A modern Italian restaurant website designed and developed as a portfolio project.
 
-First, run the development server:
+**Live Demo:** [https://casa-luce-nine.vercel.app](https://casa-luce-nine.vercel.app)
+**Repository:** [https://github.com/amerqussad2-ai/casa-luce](https://github.com/amerqussad2-ai/casa-luce)
+
+## About the Project
+
+Casa Luce is a fictional Italian restaurant set in Dubai Marina, created as a portfolio project. The goal was to design and build a realistic, premium restaurant website from the ground up — one that could plausibly belong to a real hospitality brand.
+
+The project focuses on:
+
+- Visual design and a consistent editorial art direction
+- Responsive, multi-breakpoint development
+- Accessibility-conscious markup and interaction patterns
+- Clear navigation across a complete, multi-page experience
+
+Casa Luce is not a real restaurant, and no part of this project represents an actual business.
+
+## Pages
+
+- **Home** — Hero, restaurant introduction, signature dishes, a "why Casa Luce" section, a gallery preview, a reservation form, and location/contact details.
+- **Menu** — The full Casa Luce menu, organized by category (antipasti, pasta, secondi, contorni, and dolci).
+- **Our Story** — An editorial look at the restaurant's concept, kitchen philosophy, and atmosphere.
+- **Gallery** — A responsive gallery of the restaurant's interior, dishes, and evening atmosphere.
+- **Reservations** — A dedicated reservation page with a full booking form.
+- **Contact** — Restaurant details, location, and a contact form for enquiries.
+
+## Key Features
+
+- Responsive desktop, tablet, and mobile design
+- Premium editorial restaurant UI
+- Responsive navigation with a mobile menu
+- Menu page with multiple Italian menu categories
+- Editorial Our Story page
+- Responsive image gallery
+- Reservation form with native validation
+- Contact form with native validation
+- Accessible keyboard navigation
+- Skip-to-content support
+- Visible focus states
+- WCAG-conscious color contrast
+- SEO metadata
+- Open Graph / Twitter metadata
+- Sitemap and robots.txt
+- Responsive, optimized images using Next.js Image
+- Deployed on Vercel
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- App Router
+- Next.js Image
+- Next.js Metadata API
+- Vercel
+- Git / GitHub
+
+## Design Direction
+
+Casa Luce's visual identity is warm, premium, and editorial, inspired by fine-dining hospitality brands:
+
+- Cream / off-white
+- Olive green
+- Terracotta
+- Dark charcoal
+- Serif-led editorial typography
+- Warm, cinematic restaurant photography
+- A Dubai Marina evening atmosphere
+
+## Accessibility & Quality
+
+- Semantic HTML throughout
+- Keyboard navigation support
+- Mobile menu Escape-key support
+- Form labels and native browser validation
+- Accessible success states for forms
+- Improved, visible focus indicators
+- WCAG contrast review across the site
+- Responsive testing across multiple breakpoints
+- Clean lint and production build
+
+Casa Luce is built with accessibility in mind, but it has not undergone a formal accessibility audit or certification.
+
+## Forms
+
+The Reservation and Contact forms are currently front-end demonstrations. They validate user input and display a success state on submission, but they do not currently send emails or store submissions in a backend or database. No reservation or message submitted through this site is actually processed.
+
+## Preview
+
+<!-- Add final Casa Luce desktop screenshot here -->
+
+## Running Locally
 
 ```bash
+git clone https://github.com/amerqussad2-ai/casa-luce.git
+cd casa-luce
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To lint and build the project:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## Project Status
 
-To learn more about Next.js, take a look at the following resources:
+Casa Luce v1 is complete and deployed as a portfolio project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Potential future enhancements (not yet implemented):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Backend reservation storage
+- Email notifications
+- Analytics
+- Additional performance optimization
 
-## Deploy on Vercel
+## Credits / Note
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Casa Luce is a fictional restaurant concept created for portfolio purposes. All content, imagery, and branding are part of this design exercise and do not represent a real business.
