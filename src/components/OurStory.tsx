@@ -35,7 +35,7 @@ export default function OurStory() {
             shared around the table.
           </p>
           <Link
-            href="#our-story"
+            href="/our-story"
             className="mt-8 inline-flex w-fit items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive transition-colors hover:text-terracotta"
           >
             Discover Our Story
