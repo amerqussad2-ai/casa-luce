@@ -2,8 +2,9 @@
 
 A modern Italian restaurant website designed and developed as a portfolio project.
 
-**Live Demo:** [https://casa-luce-nine.vercel.app](https://casa-luce-nine.vercel.app)
-**Repository:** [https://github.com/amerqussad2-ai/casa-luce](https://github.com/amerqussad2-ai/casa-luce)
+**Live Demo:** [View Casa Luce](https://casa-luce-nine.vercel.app)
+
+**Repository:** [GitHub](https://github.com/amerqussad2-ai/casa-luce)
 
 ## About the Project
 
@@ -82,7 +83,7 @@ Casa Luce's visual identity is warm, premium, and editorial, inspired by fine-di
 - Responsive testing across multiple breakpoints
 - Clean lint and production build
 
-Casa Luce is built with accessibility in mind, but it has not undergone a formal accessibility audit or certification.
+Accessibility was reviewed during development, including keyboard navigation, focus states, semantic markup, and color contrast. The project has not undergone third-party accessibility certification.
 
 ## Forms
 
@@ -90,7 +91,7 @@ The Reservation and Contact forms are currently front-end demonstrations. They v
 
 ## Preview
 
-<!-- Add final Casa Luce desktop screenshot here -->
+![Casa Luce homepage](public/images/readme/casa-luce-homepage.png)
 
 ## Running Locally
 
