@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/menu", label: "Menu" },
-  { href: "/our-story", label: "Our Story" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/reservations", label: "Reservations" },
-  { href: "/contact", label: "Contact" },
+  { href: "#home", label: "Home" },
+  { href: "#signature-dishes", label: "Menu" },
+  { href: "#our-story", label: "Our Story" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#reservations", label: "Reservations" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <span className="text-xs font-semibold uppercase tracking-widest text-cream/40">
+            <span className="text-xs font-semibold uppercase tracking-widest text-cream/55">
               Navigation
             </span>
             <nav aria-label="Footer" className="mt-4 flex flex-col gap-3">
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <span className="text-xs font-semibold uppercase tracking-widest text-cream/40">
+            <span className="text-xs font-semibold uppercase tracking-widest text-cream/55">
               Contact
             </span>
             <address className="mt-4 flex flex-col gap-3 text-sm not-italic text-cream/70">
@@ -88,7 +88,7 @@ export default function Footer() {
                 Facebook
               </a>
             </div>
-            <p className="text-xs text-cream/40">
+            <p className="text-xs text-cream/55">
               &copy; 2026 Casa Luce. All rights reserved.
             </p>
           </div>

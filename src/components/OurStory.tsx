@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function OurStory() {
   return (
-    <section className="bg-cream px-6 py-24 sm:py-32 lg:px-10">
+    <section id="our-story" className="scroll-mt-24 bg-cream px-6 py-24 sm:py-32 lg:px-10">
       <div className="mx-auto mb-16 h-px w-16 bg-terracotta sm:mb-20" />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -18,7 +18,7 @@ export default function OurStory() {
         </div>
 
         <div className="flex flex-col">
-          <span className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+          <span className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-deep">
             Our Story
           </span>
           <h2 className="font-serif text-3xl font-semibold leading-tight text-charcoal sm:text-4xl md:text-5xl">
@@ -35,7 +35,7 @@ export default function OurStory() {
             shared around the table.
           </p>
           <Link
-            href="/our-story"
+            href="#our-story"
             className="mt-8 inline-flex w-fit items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive transition-colors hover:text-terracotta"
           >
             Discover Our Story

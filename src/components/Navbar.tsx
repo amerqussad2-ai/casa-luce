@@ -1,19 +1,34 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/menu", label: "Menu" },
-  { href: "/our-story", label: "Our Story" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/reservations", label: "Reservations" },
-  { href: "/contact", label: "Contact" },
+  { href: "#home", label: "Home" },
+  { href: "#signature-dishes", label: "Menu" },
+  { href: "#our-story", label: "Our Story" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#reservations", label: "Reservations" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!isMenuOpen) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isMenuOpen]);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-cream/10 bg-charcoal/40 backdrop-blur-md">
@@ -38,13 +53,14 @@ export default function Navbar() {
         </nav>
 
         <Link
-          href="/reservations"
-          className="hidden shrink-0 rounded-full bg-terracotta px-6 py-2.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta/90 lg:inline-block"
+          href="#reservations"
+          className="hidden shrink-0 rounded-full bg-terracotta-deep px-6 py-2.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90 lg:inline-block"
         >
           Reserve a Table
         </Link>
 
         <button
+          ref={menuButtonRef}
           type="button"
           onClick={() => setIsMenuOpen((open) => !open)}
           aria-expanded={isMenuOpen}
@@ -100,9 +116,9 @@ export default function Navbar() {
             ))}
             <li className="pt-2">
               <Link
-                href="/reservations"
+                href="#reservations"
                 onClick={() => setIsMenuOpen(false)}
-                className="inline-block rounded-full bg-terracotta px-6 py-2.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta/90"
+                className="inline-block rounded-full bg-terracotta-deep px-6 py-2.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90"
               >
                 Reserve a Table
               </Link>

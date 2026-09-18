@@ -2,10 +2,13 @@ import Link from "next/link";
 
 export default function LocationContact() {
   return (
-    <section className="bg-charcoal px-6 py-24 sm:py-32 lg:px-10">
+    <section
+      id="contact"
+      className="scroll-mt-24 bg-charcoal px-6 py-24 sm:py-32 lg:px-10"
+    >
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-20">
         <div className="flex flex-col">
-          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-glow">
             Visit Casa Luce
           </span>
           <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-cream sm:text-4xl md:text-5xl">
@@ -67,13 +70,13 @@ export default function LocationContact() {
               href="https://www.google.com/maps/search/?api=1&query=Dubai+Marina%2C+Dubai%2C+United+Arab+Emirates"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-terracotta px-8 py-3.5 text-center text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta/90"
+              className="rounded-full bg-terracotta-deep px-8 py-3.5 text-center text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90"
             >
               Get Directions
             </a>
             <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive transition-colors hover:text-terracotta"
+              href="#contact"
+              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive-glow transition-colors hover:text-terracotta-glow"
             >
               Contact Us
               <span aria-hidden="true">&rarr;</span>

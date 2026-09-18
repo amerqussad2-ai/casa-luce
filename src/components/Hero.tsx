@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-charcoal">
+    <section
+      id="home"
+      className="relative flex min-h-screen scroll-mt-24 items-center justify-center overflow-hidden bg-charcoal"
+    >
       <Image
         src="/images/casa-luce-hero.png"
         alt=""
@@ -32,13 +35,13 @@ export default function Hero() {
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Link
-            href="/reservations"
-            className="rounded-full bg-terracotta px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta/90"
+            href="#reservations"
+            className="rounded-full bg-terracotta-deep px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90"
           >
             Reserve a Table
           </Link>
           <Link
-            href="/menu"
+            href="#signature-dishes"
             className="rounded-full border border-cream/50 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-cream/10"
           >
             Explore the Menu
