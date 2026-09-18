@@ -62,7 +62,7 @@ export default function GalleryPreview() {
           shape every evening.
         </p>
         <Link
-          href="#gallery"
+          href="/gallery"
           className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-olive-glow transition-colors hover:text-terracotta-glow"
         >
           View the Gallery
