@@ -4,12 +4,12 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const NAV_LINKS = [
-  { href: "#home", label: "Home" },
-  { href: "#signature-dishes", label: "Menu" },
-  { href: "#our-story", label: "Our Story" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#reservations", label: "Reservations" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/menu", label: "Menu" },
+  { href: "/#our-story", label: "Our Story" },
+  { href: "/#gallery", label: "Gallery" },
+  { href: "/#reservations", label: "Reservations" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -53,7 +53,7 @@ export default function Navbar() {
         </nav>
 
         <Link
-          href="#reservations"
+          href="/#reservations"
           className="hidden shrink-0 rounded-full bg-terracotta-deep px-6 py-2.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90 lg:inline-block"
         >
           Reserve a Table
@@ -116,7 +116,7 @@ export default function Navbar() {
             ))}
             <li className="pt-2">
               <Link
-                href="#reservations"
+                href="/#reservations"
                 onClick={() => setIsMenuOpen(false)}
                 className="inline-block rounded-full bg-terracotta-deep px-6 py-2.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90"
               >

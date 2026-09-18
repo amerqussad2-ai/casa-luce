@@ -35,13 +35,13 @@ export default function Hero() {
         </p>
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Link
-            href="#reservations"
+            href="/#reservations"
             className="rounded-full bg-terracotta-deep px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90"
           >
             Reserve a Table
           </Link>
           <Link
-            href="#signature-dishes"
+            href="/menu"
             className="rounded-full border border-cream/50 px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-cream/10"
           >
             Explore the Menu
