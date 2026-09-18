@@ -4,7 +4,7 @@ export default function ContactReservationCTA() {
   return (
     <section className="bg-charcoal px-6 py-24 sm:py-32 lg:px-10">
       <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
-        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-glow">
           Ready for Dinner?
         </span>
         <h2 className="font-serif text-3xl font-semibold leading-tight text-cream sm:text-4xl md:text-5xl">

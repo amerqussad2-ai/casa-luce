@@ -35,7 +35,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="w-fit text-sm text-cream/70 transition-colors hover:text-terracotta"
+                  className="-my-1.5 w-fit py-1.5 text-sm text-cream/70 transition-colors hover:text-terracotta"
                 >
                   {link.label}
                 </Link>
@@ -55,13 +55,13 @@ export default function Footer() {
               </span>
               <a
                 href="tel:+97145550188"
-                className="w-fit transition-colors hover:text-terracotta"
+                className="-my-1.5 w-fit py-1.5 transition-colors hover:text-terracotta"
               >
                 +971 4 555 0188
               </a>
               <a
                 href="mailto:hello@casaluce.ae"
-                className="w-fit transition-colors hover:text-terracotta"
+                className="-my-1.5 w-fit py-1.5 transition-colors hover:text-terracotta"
               >
                 hello@casaluce.ae
               </a>
@@ -69,29 +69,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-6 border-t border-cream/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-16 flex flex-col gap-4 border-t border-cream/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-sm text-cream/60">
             Modern Italian dining by the Marina.
           </p>
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
-            <div className="flex items-center gap-5">
-              <a
-                href="#"
-                className="text-xs font-semibold uppercase tracking-widest text-cream/50 transition-colors hover:text-terracotta"
-              >
-                Instagram
-              </a>
-              <a
-                href="#"
-                className="text-xs font-semibold uppercase tracking-widest text-cream/50 transition-colors hover:text-terracotta"
-              >
-                Facebook
-              </a>
-            </div>
-            <p className="text-xs text-cream/55">
-              &copy; 2026 Casa Luce. All rights reserved.
-            </p>
-          </div>
+          <p className="text-xs text-cream/55">
+            &copy; 2026 Casa Luce. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

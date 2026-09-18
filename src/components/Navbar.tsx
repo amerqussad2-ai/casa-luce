@@ -108,7 +108,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block text-sm font-medium uppercase tracking-widest text-cream/90 transition-colors hover:text-terracotta"
+                  className="-my-1.5 block py-1.5 text-sm font-medium uppercase tracking-widest text-cream/90 transition-colors hover:text-terracotta"
                 >
                   {link.label}
                 </Link>
