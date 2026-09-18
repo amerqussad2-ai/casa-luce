@@ -8,7 +8,11 @@ import LocationContact from "@/components/LocationContact";
 
 export default function Home() {
   return (
-    <main className="flex flex-1 flex-col">
+    <main
+      id="main-content"
+      tabIndex={-1}
+      className="flex flex-1 flex-col focus:outline-none"
+    >
       <Hero />
       <OurStory />
       <SignatureDishes />

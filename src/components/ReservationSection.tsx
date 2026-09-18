@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const TIME_OPTIONS = [
   "6:00 PM",
@@ -25,7 +25,10 @@ const GUEST_OPTIONS = [
 ];
 
 const fieldClassName =
-  "w-full border-0 border-b border-charcoal/20 bg-transparent py-3 text-charcoal placeholder:text-charcoal/40 focus:border-terracotta focus:outline-none";
+  "w-full border-0 border-b border-charcoal/20 bg-transparent py-3 text-charcoal placeholder:text-charcoal/40 focus:border-terracotta focus:outline-none focus-visible:ring-2 focus-visible:ring-terracotta/50 focus-visible:ring-offset-2 focus-visible:ring-offset-cream";
+
+const labelClassName =
+  "text-xs font-semibold uppercase tracking-widest text-charcoal/70";
 
 function FormField({
   id,
@@ -40,10 +43,7 @@ function FormField({
 }) {
   return (
     <div>
-      <label
-        htmlFor={id}
-        className="text-xs font-semibold uppercase tracking-widest text-charcoal/50"
-      >
+      <label htmlFor={id} className={labelClassName}>
         {label}
       </label>
       <input
@@ -69,10 +69,7 @@ function FormSelect({
 }) {
   return (
     <div>
-      <label
-        htmlFor={id}
-        className="text-xs font-semibold uppercase tracking-widest text-charcoal/50"
-      >
+      <label htmlFor={id} className={labelClassName}>
         {label}
       </label>
       <div className="relative">
@@ -108,8 +105,22 @@ function FormSelect({
   );
 }
 
+function getLocalDateString(date: Date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 export default function ReservationSection() {
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const dateInput = document.getElementById("date");
+    if (dateInput instanceof HTMLInputElement) {
+      dateInput.min = getLocalDateString(new Date());
+    }
+  }, []);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -117,10 +128,13 @@ export default function ReservationSection() {
   };
 
   return (
-    <section className="bg-cream px-6 py-24 sm:py-32 lg:px-10">
+    <section
+      id="reservations"
+      className="scroll-mt-24 bg-cream px-6 py-24 sm:py-32 lg:px-10"
+    >
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-20">
         <div className="flex flex-col">
-          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-terracotta">
+          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-terracotta-deep">
             Reservations
           </span>
           <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight text-charcoal sm:text-4xl md:text-5xl">
@@ -133,20 +147,20 @@ export default function ReservationSection() {
 
           <div className="mt-10 max-w-md space-y-3 border-t border-charcoal/10 pt-8">
             <div className="flex items-baseline justify-between gap-4 text-sm">
-              <span className="uppercase tracking-widest text-charcoal/50">
+              <span className="uppercase tracking-widest text-charcoal/70">
                 Location
               </span>
               <span className="text-charcoal">Dubai Marina, Dubai</span>
             </div>
             <div className="flex items-baseline justify-between gap-4 text-sm">
-              <span className="uppercase tracking-widest text-charcoal/50">
+              <span className="uppercase tracking-widest text-charcoal/70">
                 Dinner Service
               </span>
               <span className="text-charcoal">6:00 PM &ndash; 10:00 PM</span>
             </div>
           </div>
 
-          <p className="mt-8 max-w-md text-sm leading-relaxed text-charcoal/60">
+          <p className="mt-8 max-w-md text-sm leading-relaxed text-charcoal/70">
             Reservations are subject to availability. Our team will confirm
             your booking shortly.
           </p>
@@ -196,7 +210,7 @@ export default function ReservationSection() {
               </div>
               <button
                 type="submit"
-                className="mt-3 w-full rounded-full bg-terracotta px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta/90"
+                className="mt-3 w-full rounded-full bg-terracotta-deep px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terracotta-deep/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-terracotta-deep focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
               >
                 Request a Table
               </button>

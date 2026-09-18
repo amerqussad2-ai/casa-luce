@@ -16,6 +16,12 @@
   --color-olive: #5c6440;
   --color-terracotta: #bd5b3a;
   --color-charcoal: #221f1c;
+
+  /* Contrast-safe variants for small text / links on a specific
+     background, used only where the base tokens above fail WCAG AA. */
+  --color-terracotta-deep: #a65033;
+  --color-terracotta-glow: #c9795d;
+  --color-olive-glow: #8d9279;
 }
 
 body {
