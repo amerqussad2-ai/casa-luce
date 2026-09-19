@@ -5,11 +5,13 @@ export function CaseStudyImage({
   alt,
   width,
   height,
+  priority,
 }: {
   src: string;
   alt: string;
   width: number;
   height: number;
+  priority?: boolean;
 }) {
   return (
     <div className="overflow-hidden rounded-lg border border-border">
@@ -20,6 +22,7 @@ export function CaseStudyImage({
         height={height}
         sizes="(min-width: 1024px) 896px, 100vw"
         className="h-auto w-full"
+        priority={priority}
       />
     </div>
   );

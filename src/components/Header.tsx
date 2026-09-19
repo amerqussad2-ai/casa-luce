@@ -61,7 +61,7 @@ export function Header() {
         <button
           ref={toggleButtonRef}
           type="button"
-          className="inline-flex items-center justify-center rounded-md border border-border p-2 md:hidden"
+          className="inline-flex items-center justify-center rounded-md border border-muted-graphite p-2 md:hidden"
           aria-expanded={isMenuOpen}
           aria-controls="mobile-nav"
           onClick={() => setIsMenuOpen((open) => !open)}

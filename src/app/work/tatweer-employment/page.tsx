@@ -60,6 +60,7 @@ export default function TatweerEmploymentPage() {
             alt="Tatweer Employment jobs page hero showing the Current Job Opportunities heading and introduction, shown on desktop"
             width={1352}
             height={609}
+            priority
           />
         </Container>
       </div>

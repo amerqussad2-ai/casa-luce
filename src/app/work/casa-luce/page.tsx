@@ -80,6 +80,7 @@ export default function CasaLucePage() {
             alt="Casa Luce restaurant website navigation and photo gallery of the dining room, dishes, and the Dubai Marina skyline, shown on desktop"
             width={1440}
             height={900}
+            priority
           />
         </Container>
       </div>

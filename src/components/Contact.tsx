@@ -32,7 +32,7 @@ export function Contact() {
             href={linkedInUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+            className="inline-flex items-center justify-center rounded-md border border-muted-graphite px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
           >
             LinkedIn
             <span className="sr-only"> (opens in a new tab)</span>
@@ -41,7 +41,7 @@ export function Contact() {
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+            className="inline-flex items-center justify-center rounded-md border border-muted-graphite px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
           >
             GitHub
             <span className="sr-only"> (opens in a new tab)</span>
