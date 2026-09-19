@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { BackToWorkLink } from "@/components/case-study/BackToWorkLink";
 import { CaseStudyHeader } from "@/components/case-study/CaseStudyHeader";
@@ -7,6 +8,24 @@ import { CaseStudyLinksGroup } from "@/components/case-study/CaseStudyLinksGroup
 
 const liveUrl = "https://casa-luce-nine.vercel.app";
 const githubUrl = "https://github.com/amerqussad2-ai/casa-luce";
+
+const description =
+  "Case study of Casa Luce, a responsive multi-page restaurant website built with Next.js, React, TypeScript, Tailwind CSS, and deployed on Vercel.";
+
+export const metadata: Metadata = {
+  title: "Casa Luce Case Study",
+  description,
+  openGraph: {
+    title: "Casa Luce Case Study | Amer Kussad",
+    description,
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Casa Luce Case Study | Amer Kussad",
+    description,
+  },
+};
 
 const proseClass = "max-w-3xl space-y-4 text-base leading-relaxed text-muted-foreground";
 const listClass = "space-y-2 text-base text-muted-foreground";

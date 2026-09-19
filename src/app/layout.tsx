@@ -17,9 +17,12 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Amer Kussad — Front-End Developer",
+  title: {
+    default: "Amer Kussad | Front-End Developer",
+    template: "%s | Amer Kussad",
+  },
   description:
-    "Portfolio of Amer Kussad, a Front-End Developer working with React & Next.js, based in Ras Al Khaimah, UAE.",
+    "Front-End Developer based in Ras Al Khaimah, UAE, building responsive web experiences with React, Next.js, TypeScript, and modern web technologies.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { BackToWorkLink } from "@/components/case-study/BackToWorkLink";
 import { CaseStudyHeader } from "@/components/case-study/CaseStudyHeader";
@@ -8,6 +9,24 @@ import { CaseStudyLinksGroup } from "@/components/case-study/CaseStudyLinksGroup
 const liveUrl = "https://tatweer-employment.amerqussad2.workers.dev";
 
 const proseClass = "max-w-3xl space-y-4 text-base leading-relaxed text-muted-foreground";
+
+const description =
+  "Case study of Tatweer Employment, a bilingual Arabic/English recruitment web application built with React, TypeScript, Supabase, PostgreSQL, and Cloudflare Workers.";
+
+export const metadata: Metadata = {
+  title: "Tatweer Employment Case Study",
+  description,
+  openGraph: {
+    title: "Tatweer Employment Case Study | Amer Kussad",
+    description,
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tatweer Employment Case Study | Amer Kussad",
+    description,
+  },
+};
 
 export default function TatweerEmploymentPage() {
   return (
