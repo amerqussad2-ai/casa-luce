@@ -4,6 +4,7 @@ import { Capabilities } from "@/components/Capabilities";
 import { About } from "@/components/About";
 import { CurrentlyExploring } from "@/components/CurrentlyExploring";
 import { Resume } from "@/components/Resume";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <CurrentlyExploring />
       <Resume />
+      <Contact />
     </>
   );
 }
