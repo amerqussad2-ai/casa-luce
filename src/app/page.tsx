@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { SelectedWork } from "@/components/SelectedWork";
 import { Capabilities } from "@/components/Capabilities";
 import { About } from "@/components/About";
+import { CurrentlyExploring } from "@/components/CurrentlyExploring";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <SelectedWork />
       <Capabilities />
       <About />
+      <CurrentlyExploring />
     </>
   );
 }
