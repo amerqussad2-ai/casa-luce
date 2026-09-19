@@ -1,28 +1,39 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/Container";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/work/casa-luce", label: "Casa Luce" },
-  { href: "/work/tatweer-employment", label: "Tatweer Employment" },
+  { id: "work", label: "Work" },
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "resume", label: "Resume" },
+  { id: "contact", label: "Contact" },
 ];
 
 export function Header() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!isMenuOpen) return;
 
     function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setIsMenuOpen(false);
+      if (event.key === "Escape") {
+        setIsMenuOpen(false);
+        toggleButtonRef.current?.focus();
+      }
     }
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isMenuOpen]);
+
+  const hrefFor = (id: string) => (isHome ? `#${id}` : `/#${id}`);
 
   return (
     <header className="border-b border-border bg-surface">
@@ -38,8 +49,8 @@ export function Header() {
         <nav aria-label="Primary" className="hidden md:block">
           <ul className="flex items-center gap-8 text-sm text-foreground">
             {navItems.map((item) => (
-              <li key={item.href}>
-                <Link href={item.href} className="transition-colors hover:text-accent">
+              <li key={item.id}>
+                <Link href={hrefFor(item.id)} className="transition-colors hover:text-accent">
                   {item.label}
                 </Link>
               </li>
@@ -48,6 +59,7 @@ export function Header() {
         </nav>
 
         <button
+          ref={toggleButtonRef}
           type="button"
           className="inline-flex items-center justify-center rounded-md border border-border p-2 md:hidden"
           aria-expanded={isMenuOpen}
@@ -83,9 +95,9 @@ export function Header() {
         <Container>
           <ul className="flex flex-col gap-1 py-4 text-sm text-foreground">
             {navItems.map((item) => (
-              <li key={item.href}>
+              <li key={item.id}>
                 <Link
-                  href={item.href}
+                  href={hrefFor(item.id)}
                   className="block rounded-md px-2 py-2 transition-colors hover:bg-background hover:text-accent"
                   onClick={() => setIsMenuOpen(false)}
                 >
