@@ -27,6 +27,7 @@ export function Footer() {
             className="hover:text-accent"
           >
             LinkedIn
+            <span className="sr-only"> (opens in a new tab)</span>
           </a>
           <a
             href={githubUrl}
@@ -35,6 +36,7 @@ export function Footer() {
             className="hover:text-accent"
           >
             GitHub
+            <span className="sr-only"> (opens in a new tab)</span>
           </a>
         </div>
 

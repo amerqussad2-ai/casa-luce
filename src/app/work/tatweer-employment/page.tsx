@@ -287,8 +287,9 @@ export default function TatweerEmploymentPage() {
           </h3>
           <p>
             <strong className="text-foreground">Problem:</strong>{" "}
-            Cloudflare&apos;s build encountered an
-            ERR_PNPM_LOCKFILE_CONFIG_MISMATCH error.
+            Cloudflare&apos;s build encountered an{" "}
+            <code className="break-all">ERR_PNPM_LOCKFILE_CONFIG_MISMATCH</code>{" "}
+            error.
           </p>
           <p>
             <strong className="text-foreground">Solution:</strong> The

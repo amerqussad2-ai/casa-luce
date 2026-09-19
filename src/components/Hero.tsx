@@ -25,7 +25,7 @@ export function Hero() {
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
               href="#work"
-              className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-medium text-soft-white transition-opacity hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-md bg-accent px-5 py-2.5 text-sm font-medium text-soft-white transition-opacity hover:opacity-90"
             >
               View Work
             </a>
@@ -33,9 +33,10 @@ export function Hero() {
               href="/resume/Amer_Kussad_Portfolio_Safe_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
+              className="inline-flex items-center justify-center rounded-md border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               View Resume
+              <span className="sr-only"> (opens in a new tab)</span>
             </a>
           </div>
         </div>

@@ -24,11 +24,11 @@ export function SelectedWork() {
               </div>
 
               <div className="max-w-3xl">
-                <h3 className="font-serif text-3xl text-foreground sm:text-4xl">
+                <h3 className="font-serif text-2xl text-foreground sm:text-3xl">
                   {project.name}
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">{project.type}</p>
-                <p className="text-sm text-muted-foreground">{project.status}</p>
+                <p className="text-sm font-medium text-accent">{project.status}</p>
 
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                   {project.description}

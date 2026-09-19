@@ -19,7 +19,7 @@ export function CaseStudyHeader({
 }) {
   return (
     <div className="max-w-3xl">
-      <h1 className="font-serif text-4xl text-foreground sm:text-5xl">{name}</h1>
+      <h1 className="font-serif text-4xl text-foreground sm:text-5xl lg:text-6xl">{name}</h1>
       <p className="mt-3 text-base text-muted-foreground">{type}</p>
       <p className="text-sm font-medium text-accent">{status}</p>
 
